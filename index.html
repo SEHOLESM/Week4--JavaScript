@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS week 4</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--lesson 1-->
+  <h1>JavaScript Week 4</h1>
+  <div class="Lesson">
+    <h3>Lesson 1: Show text on page</h3>
+
+    <h2 id="heading1">
+      Hello
+    </h2>
+
+    <p id="text1" >World </p>
+    <button onclick="lesson1()">change Text</button>
+
+    <script>
+        function lesson1() {
+          document.getElementById ("heading1") .innerHTML="This is JavaScript!";
+          document.getElementById("text1").innerHTML="I am having fun!";
+        }
+    </script>
+  </div>
+  
+  <!--lesson 2-->
+
+  <div class="lesson">
+    <h2 id="Heading2">Lesson 2 Variables (Text storage)</h2>
+    <h2 id="text2">More Text here</h2>
+    <button onclick="Lesson2()">Use variables</button>
+  <!--notes var(text), const(doesnt change ), list(variable that can change)-->
+    <script>
+      function Lesson2(){
+        var message1="hello everyone!";
+        var message2="I love JavaSript! "
+        var message3="it's awesome!"
+
+        document.getElementById("Heading2").innerHTML=message1;
+        document.getElementById("text2").innerHTML =message2  +  message3;
+      }
+    </script>
+
+  </div>
+
+</body>
+</html>
