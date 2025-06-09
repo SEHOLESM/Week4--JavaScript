@@ -91,6 +91,60 @@
 
  <!--lesson 6---->
 
+ <div class="Lesson">
+  <h3>lesson 6: Toggle functions</h3  >
 
+    <h2 id="toggle" onclick= "toggleText()">JavaScript</h2>
+    <p>Click repeatedly to toggle!</p>
+
+    <script>
+      function toggleText() {
+        var toggle= document.getElementById("toggle");
+         
+        if (toggle.innerHTML == "JavaScript"){
+          toggle.innerHTML= "is awesome";
+        }  else{
+          toggle.innerHTML = "JavaScript";
+        }
+      }
+    </script>
+ </div>
+
+  <!--lesson 7---->
+ <div class="Lesson">
+  <h2>Lesson 7: Function Parameters</h2>
+  <p><strong>Concept</strong> : Passsing date int fuction</p>
+  <button onclick="addNumbers(10, 7)">Add 10 + 7</button>
+  <button onclick="addNumbers(25, 18)">add 25 + 18</button>
+  <button onclick="addNumbers(1245, 562)">add 1245 + 562</button>
+  <div class="output" id="addition7">Result will show here.
+
+    <script>
+      function addNumbers(num1, num2) {
+        document.getElementById("addition7").innerHTML=num1+ "+" + num2+ "="+(num1 + num2)  
+      }
+    </script>
+
+  </div>
+
+ </div>
+ <!--lesson 8---->
+  <div class="Lesson">
+    <h2>Lesson 8:Function Return</h2>
+    <p><strong>Concept:</strong> Functions returning values to be used elsewhere</p>
+    
+    <Button onclick="runlesson8()">Calculate and Displace result</Button>
+    <div class="output" id="addition8">Result will show here</div>
+
+    <script>
+      function runlesson8() {
+        document.getElementById("addition8").innerHTML="10 + 7 =" + addNumbersReturn(10, 7);
+      }
+        function addNumbersReturn(num1, num2) {
+          return num1 + num2;
+      }
+
+    </script>
+  </div>
 </body>
 </html>
