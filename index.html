@@ -37,8 +37,8 @@
     <script>
       function Lesson2(){
         var message1="hello everyone!";
-        var message2="I love JavaSript! "
-        var message3="it's awesome!"
+        var message2="I love JavaSript! ";
+        var message3="it's awesome!";
 
         document.getElementById("Heading2").innerHTML=message1;
         document.getElementById("text2").innerHTML =message2  +  message3;
@@ -46,6 +46,52 @@
     </script>
 
   </div>
+  <!--lesson 3- variables part 2--->
+  <div class="lesson">
+    <h3>lesson 3:Variables (Numbers)</h3>
+    <p id="Math">Math equation will show up here</p>
+    <button onclick="Lesson3()">Do Math</button>
+    <script>
+      function Lesson3() {
+        var num1=7;
+        var num2=10;
+        document.getElementById("Math").innerHTML=num1 + "x" + num2 + "=" + (num1* num2);
+      }
+    </script>
+  </div>
+   <!--lesson 4- conditonal part 2--->
+<div class="lesson">
+  <h3>Lesson 4: If/Else decisions (conditonals)</h3>
+  <input type="password" id="password" placeholder="Try:007">
+  <button onclick="lesson4()">Check Password</button>
+  <div class="result" id="result4">Enter Password and click</div>
+  
+  <script>
+    function lesson4(){
+    var userPasword=document.getElementById("password").value;
+    if (userPasword=="007") {
+      document.getElementById("result4").innerHTML="Correct password. You are logged in!";
+    } else{
+      document.getElementById("result4").innerHTML="Wrong password. Please try again";
+    }
+  }
+  </script>
+
+</div>
+
+ <!--lesson 5---->
+<div class="lesson">
+  <h3>lesson 5: click events</h3>
+  <h2 onclick="this.innerHTML='Its awesome!'">JavaScript</h2>
+  <p>Click on the word "JavaScript" above.</p>
+
+
+</div>
+
+
+
+
+
 
 </body>
 </html>
